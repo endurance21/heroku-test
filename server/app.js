@@ -75,4 +75,4 @@ app.get('/hii',(req,res)=>{
 //     res.render('contact');
 // });
 
-app.listen(3002, () => console.log('server is running....'))
+app.listen(PORT, () => console.log('server is running....'))

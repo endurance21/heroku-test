@@ -7,7 +7,7 @@ const cors = require('cors')
 const creds = require('./config')
 // const path = require('path')
 const app = express();
-
+var port = process.env.PORT
 // app.engine('handlebars', exphbs());
 // app.set('view engine', 'handlebars');
 
@@ -73,4 +73,4 @@ app.get('/hii',(req,res)=>{
 //     res.render('contact');
 // });
 
-app.listen(0, () => console.log('server is running....' ,  app.get('port') ))
+app.listen(port, () => console.log('server is running....' ,  port))

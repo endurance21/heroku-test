@@ -8,7 +8,8 @@ const creds = require('./config')
 // const path = require('path')
 const app = express();
 
-
+const PORT = process.env.PORT
+console.log(PORT)
 // app.engine('handlebars', exphbs());
 // app.set('view engine', 'handlebars');
 

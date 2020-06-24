@@ -66,6 +66,9 @@ router.post('/send', (req, res, next) => {
 app.use(cors())
 app.use(express.json())
 app.use('/', router)
+app.get('/hii',(req,res)=>{
+  res.send("hii")
+})
 // app.listen(3002)
 // app.get('/', (req, res) => {
 //     res.render('contact');

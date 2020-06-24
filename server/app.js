@@ -8,7 +8,7 @@ const creds = require('./config')
 // const path = require('path')
 const app = express();
 
-const PORT = 80
+const PORT = process.env.
 console.log(PORT)
 // app.engine('handlebars', exphbs());
 // app.set('view engine', 'handlebars');
@@ -75,4 +75,4 @@ app.get('/hii',(req,res)=>{
 //     res.render('contact');
 // });
 
-app.listen(PORT, () => console.log('server is running....'))
+app.listen(0, () => console.log('server is running....'+app.get('port'))
